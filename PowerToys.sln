@@ -145,6 +145,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerToys.Settings.UI", "src\core\Microsoft.PowerToys.Settings.UI\Microsoft.PowerToys.Settings.UI.csproj", "{A7D5099E-F0FD-4BF3-8522-5A682759F915}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.PowerToys.Settings.UI.Runner", "src\core\Microsoft.PowerToys.Settings.UI.Runner\Microsoft.PowerToys.Settings.UI.Runner.csproj", "{A4040DFB-53B7-4134-BF4B-14D6BDBEC62D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F88B6FD1-14BD-48DB-85C2-6C51B8045121} = {F88B6FD1-14BD-48DB-85C2-6C51B8045121}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Microsoft.PowerToys.Settings.TwoWayIPCLib", "src\core\Microsoft.PowerToys.Settings.TwoWayIPCLib\TwoWayIPCLib.vcxproj", "{F88B6FD1-14BD-48DB-85C2-6C51B8045121}"
 EndProject
@@ -175,8 +178,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.PowerToys.Settings.UI.Lib", "src\core\Microsoft.PowerToys.Settings.UI.Lib\Microsoft.PowerToys.Settings.UI.Lib.csproj", "{B1BCC8C6-46B5-4BFA-8F22-20F32D99EC6A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "src\core\Test\Test.csproj", "{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -424,14 +425,6 @@ Global
 		{B1BCC8C6-46B5-4BFA-8F22-20F32D99EC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1BCC8C6-46B5-4BFA-8F22-20F32D99EC6A}.Release|x64.ActiveCfg = Release|Any CPU
 		{B1BCC8C6-46B5-4BFA-8F22-20F32D99EC6A}.Release|x64.Build.0 = Release|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Debug|x64.Build.0 = Debug|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Release|x64.ActiveCfg = Release|Any CPU
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -479,7 +472,6 @@ Global
 		{217DF501-135C-4E38-BFC8-99D4821032EA} = {2F305555-C296-497E-AC20-5FA1B237996A}
 		{47310AB4-9034-4BD1-8D8B-E88AD21A171B} = {2F305555-C296-497E-AC20-5FA1B237996A}
 		{B1BCC8C6-46B5-4BFA-8F22-20F32D99EC6A} = {C3081D9A-1586-441A-B5F4-ED815B3719C1}
-		{C266BF3A-B9B8-4047-8ADD-E22A6AE1DFFC} = {C3081D9A-1586-441A-B5F4-ED815B3719C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3A2F9D1-7930-4EF4-A6FC-7EE0A99821D0}
