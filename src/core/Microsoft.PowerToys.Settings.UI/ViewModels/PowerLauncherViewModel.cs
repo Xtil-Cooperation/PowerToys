@@ -40,9 +40,9 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             SettingsUtils.SaveSettings(JsonSerializer.Serialize(settings, options), POWERTOY_NAME);
 
             // Propagate changes to Power Launcher through IPC
-            //var propertiesJson = JsonSerializer.Serialize(settings.properties);
-            //ShellPage.Default_SndMSG_Callback(
-            //    string.Format("{{ \"{0}\": {1} }}", POWERTOY_NAME, JsonSerializer.Serialize(settings.properties)));
+            var propertiesJson = JsonSerializer.Serialize(settings.properties);
+            ShellPage.Default_SndMSG_Callback(
+                string.Format("{{ \"{0}\": {1} }}", POWERTOY_NAME, JsonSerializer.Serialize(settings.properties)));
         }
 
         public bool EnablePowerLauncher
